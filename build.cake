@@ -9,7 +9,7 @@
 
 // compile
 var compileConfig = Argument("configuration", "Release");
-var slnFile = "./Ocelot.Tracing.Buttefly.sln";
+var slnFile = "./Ocelot.Tracing.Butterfly.sln";
 
 // build artifacts
 var artifactsDir = Directory("artifacts");
@@ -17,9 +17,9 @@ var artifactsDir = Directory("artifacts");
 // unit testing
 var artifactsForUnitTestsDir = artifactsDir + Directory("UnitTests");
 var unitTestAssemblies = @"./test/Ocelot.Tracing.Butterfly.UnitTests/Ocelot.Tracing.Butterfly.UnitTests.csproj";
-var minCodeCoverage = 82d;
+var minCodeCoverage = 9d;
 var coverallsRepoToken = "coveralls-repo-token-ocelot";
-var coverallsRepo = "https://coveralls.io/github/TomPallister/Ocelot.Tracing.Butterfly";
+var coverallsRepo = "https://coveralls.io/github/ThreeMammals/Ocelot.Tracing.Butterfly";
 
 // acceptance testing
 var artifactsForAcceptanceTestsDir = artifactsDir + Directory("AcceptanceTests");

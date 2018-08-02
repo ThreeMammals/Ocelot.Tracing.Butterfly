@@ -22,7 +22,10 @@
     <CodeAnalysisRuleSet>..\..\codeanalysis.ruleset</CodeAnalysisRuleSet>
     <RootNamespace>Ocelot.Tracing.Butterfly</RootNamespace>
   </PropertyGroup>
-
+ <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>True</DebugSymbols>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Butterfly.Client" Version="0.0.8" />
     <PackageReference Include="Butterfly.Client.AspNetCore" Version="0.0.8" />
