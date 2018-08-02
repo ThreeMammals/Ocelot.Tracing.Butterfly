@@ -9,29 +9,29 @@
 
 // compile
 var compileConfig = Argument("configuration", "Release");
-var slnFile = "./Ocelot.sln";
+var slnFile = "./Ocelot.Tracing.Buttefly.sln";
 
 // build artifacts
 var artifactsDir = Directory("artifacts");
 
 // unit testing
 var artifactsForUnitTestsDir = artifactsDir + Directory("UnitTests");
-var unitTestAssemblies = @"./test/Ocelot.UnitTests/Ocelot.UnitTests.csproj";
+var unitTestAssemblies = @"./test/Ocelot.Tracing.Butterfly.UnitTests/Ocelot.Tracing.Butterfly.UnitTests.csproj";
 var minCodeCoverage = 82d;
 var coverallsRepoToken = "coveralls-repo-token-ocelot";
-var coverallsRepo = "https://coveralls.io/github/TomPallister/Ocelot";
+var coverallsRepo = "https://coveralls.io/github/TomPallister/Ocelot.Tracing.Butterfly";
 
 // acceptance testing
 var artifactsForAcceptanceTestsDir = artifactsDir + Directory("AcceptanceTests");
-var acceptanceTestAssemblies = @"./test/Ocelot.AcceptanceTests/Ocelot.AcceptanceTests.csproj";
+var acceptanceTestAssemblies = @"./test/Ocelot.Tracing.Butterfly.AcceptanceTests/Ocelot.Tracing.Butterfly.AcceptanceTests.csproj";
 
 // integration testing
 var artifactsForIntegrationTestsDir = artifactsDir + Directory("IntegrationTests");
-var integrationTestAssemblies = @"./test/Ocelot.IntegrationTests/Ocelot.IntegrationTests.csproj";
+var integrationTestAssemblies = @"./test/Ocelot.Tracing.Butterfly.IntegrationTests/Ocelot.Tracing.Butterfly.IntegrationTests.csproj";
 
 // benchmark testing
 var artifactsForBenchmarkTestsDir = artifactsDir + Directory("BenchmarkTests");
-var benchmarkTestAssemblies = @"./test/Ocelot.Benchmarks";
+var benchmarkTestAssemblies = @"./test/Ocelot.Tracing.Butterfly.Benchmarks";
 
 // packaging
 var packagesDir = artifactsDir + Directory("Packages");
@@ -44,7 +44,7 @@ var nugetFeedUnstableUploadUrl = "https://www.nuget.org/api/v2/package";
 var nugetFeedUnstableSymbolsUploadUrl = "https://www.nuget.org/api/v2/package";
 
 // stable releases
-var tagsUrl = "https://api.github.com/repos/tompallister/ocelot/releases/tags/";
+var tagsUrl = "https://api.github.com/repos/threemammals/ocelot.tracing.butterfly/releases/tags/";
 var nugetFeedStableKey = EnvironmentVariable("nuget-apikey-stable");
 var nugetFeedStableUploadUrl = "https://www.nuget.org/api/v2/package";
 var nugetFeedStableSymbolsUploadUrl = "https://www.nuget.org/api/v2/package";
@@ -135,9 +135,9 @@ Task("RunUnitTests")
 					Register="user",
 					ArgumentCustomization=args=>args.Append(@"-oldstyle -returntargetcode -excludebyattribute:*.ExcludeFromCoverage*")
 				}
-				.WithFilter("+[Ocelot*]*")
+				.WithFilter("+[Ocelot.Tracing.Butterfly*]*")
 				.WithFilter("-[xunit*]*")
-				.WithFilter("-[Ocelot*Tests]*")
+				.WithFilter("-[Ocelot.Tracing.Butterfly*Tests]*")
 			);
         
 			ReportGenerator(coverageSummaryFile, artifactsForUnitTestsDir);
@@ -263,12 +263,12 @@ Task("CreatePackages")
 	.Does(() => 
 	{
 		EnsureDirectoryExists(packagesDir);
-		CopyFiles("./src/**/Ocelot.*.nupkg", packagesDir);
+		CopyFiles("./src/**/Ocelot.Tracing.Butterfly.*.nupkg", packagesDir);
 
 		//GenerateReleaseNotes(releaseNotesFile);
 
         System.IO.File.WriteAllLines(artifactsFile, new[]{
-            "nuget:Ocelot." + buildVersion + ".nupkg",
+            "nuget:Ocelot.Tracing.Butterfly." + buildVersion + ".nupkg",
             //"releaseNotes:releasenotes.md"
         });
 
