@@ -7,7 +7,6 @@ namespace Ocelot.Tracing.Butterfly.UnitTests.DependencyInjection
     using Microsoft.AspNetCore.Hosting.Internal;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
-    using Ocelot.Butterfly;
     using Ocelot.DependencyInjection;
     using Requester;
     using Shouldly;

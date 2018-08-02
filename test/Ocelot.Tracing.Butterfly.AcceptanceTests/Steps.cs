@@ -13,8 +13,6 @@
     using Microsoft.Extensions.Configuration;
     using Middleware;
     using Newtonsoft.Json;
-    using Ocelot.AcceptanceTests;
-    using Ocelot.Butterfly;
     using Shouldly;
 
     public class Steps : IDisposable

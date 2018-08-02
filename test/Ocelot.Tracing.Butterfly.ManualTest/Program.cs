@@ -6,7 +6,6 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.Logging;
     using Middleware;
-    using Ocelot.Butterfly;
 
     public class Program
     {
