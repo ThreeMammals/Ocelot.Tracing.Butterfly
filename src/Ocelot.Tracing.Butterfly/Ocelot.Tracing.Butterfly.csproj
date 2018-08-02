@@ -6,10 +6,10 @@
     <NETStandardImplicitPackageVersion>2.0.0</NETStandardImplicitPackageVersion>
     <NoPackageAnalysis>true</NoPackageAnalysis>
     <Description>This package provides methods to integrate Butterfly tracing with Ocelot.</Description>
-    <AssemblyTitle>Ocelot.Butterfly</AssemblyTitle>
+    <AssemblyTitle>Ocelot.Tracing.Butterfly</AssemblyTitle>
     <VersionPrefix>0.0.0-dev</VersionPrefix>
     <AssemblyName>Ocelot.Tracing.Butterfly</AssemblyName>
-    <PackageId>Ocelot.Butterfly</PackageId>
+    <PackageId>Ocelot.Tracing.Butterfly</PackageId>
     <PackageTags>API Gateway;.NET core; Butterfly; ButterflyAPM</PackageTags>
     <PackageProjectUrl>https://github.com/TomPallister/Ocelot</PackageProjectUrl>
     <PackageProjectUrl>https://github.com/TomPallister/Ocelot</PackageProjectUrl>
