@@ -8,7 +8,7 @@ Windows (AppVeyor)
 
 # Ocelot
 
-This package adds Butterfly tracing to Ocelot
+This package adds [Butterfly](https://github.com/liuhaoyang/butterfly) tracing to Ocelot
 
 ## How to install
 
