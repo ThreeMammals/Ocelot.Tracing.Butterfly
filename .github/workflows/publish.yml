@@ -165,12 +165,12 @@ jobs:
         file_a="coveragereport-a/SummaryGithub.md"
         md='| _Coverage Matrix_ | Line | Branch |'$'\n'
         md+='| - | - | - |'$'\n'
-        line=$(grep -F "|**Ocelot.Tracing.Butterfly.**|" $file_u)
-        line="${line/Ocelot.Tracing.Butterfly./Unit}"
+        line=$(grep -F "|**Ocelot.Tracing.Butterfly**|" $file_u)
+        line="${line/Ocelot.Tracing.Butterfly/Unit}"
         line="${line//\*\*/ }"
         md+=$line$'\n'
-        line=$(grep -F "|**Ocelot.Tracing.Butterfly.**|" $file_a)
-        line="${line/Ocelot.Tracing.Butterfly./Acceptance}"
+        line=$(grep -F "|**Ocelot.Tracing.Butterfly**|" $file_a)
+        line="${line/Ocelot.Tracing.Butterfly/Acceptance}"
         line="${line//\*\*/ }"
         md+=$line$'\n'$'\n'
         md+='---'$'\n'
