@@ -2,7 +2,7 @@
 # Ocelot.Tracing.Butterfly
 [![Release](https://github.com/ThreeMammals/Ocelot.Tracing.Butterfly/actions/workflows/release.yml/badge.svg)](https://github.com/ThreeMammals/Ocelot.Tracing.Butterfly/actions/workflows/release.yml)
 [![Publish](https://github.com/ThreeMammals/Ocelot.Tracing.Butterfly/actions/workflows/publish.yml/badge.svg)](https://github.com/ThreeMammals/Ocelot.Tracing.Butterfly/actions/workflows/publish.yml)
-[![codecov](https://codecov.io/gh/ThreeMammals/Ocelot.Tracing.Butterfly/graph/badge.svg?token=xxx)](https://codecov.io/gh/ThreeMammals/Ocelot.Tracing.Butterfly)
+[![codecov](https://codecov.io/gh/ThreeMammals/Ocelot.Tracing.Butterfly/graph/badge.svg?token=GsF4NP7Ujk)](https://codecov.io/gh/ThreeMammals/Ocelot.Tracing.Butterfly)
 [![NuGet](https://img.shields.io/nuget/v/Ocelot.Tracing.Butterfly?logo=nuget&label=NuGet&color=blue)](https://www.nuget.org/packages/Ocelot.Tracing.Butterfly/ "Download Ocelot.Tracing.Butterfly from NuGet.org")
 [![Downloads](https://img.shields.io/nuget/dt/Ocelot.Tracing.Butterfly?logo=nuget&label=Downloads)](https://www.nuget.org/packages/Ocelot.Tracing.Butterfly/ "Total Ocelot.Tracing.Butterfly downloads from NuGet.org")
 
