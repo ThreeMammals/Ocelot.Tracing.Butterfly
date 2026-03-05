@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="src/Ocelot.Tracing.Butterfly.csproj" />
+  <Project Path="unit/Ocelot.Tracing.Butterfly.UnitTests.csproj" />
 </Solution>
