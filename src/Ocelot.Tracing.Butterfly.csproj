@@ -12,7 +12,7 @@
     <NoWarn>CS1591</NoWarn>
 
     <!--Package properties-->
-    <Version>25.0.0-beta.1</Version>
+    <Version>25.0.0-beta.2</Version>
     <PackageId>Ocelot.Tracing.Butterfly</PackageId>
     <PackageDescription>Provides Ocelot extensions to use Butterfly OpenTracing</PackageDescription>
     <PackageReleaseNotes>https://github.com/ThreeMammals/Ocelot.Tracing.Butterfly/releases</PackageReleaseNotes>
